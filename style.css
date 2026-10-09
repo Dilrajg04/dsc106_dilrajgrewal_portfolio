@@ -20,6 +20,10 @@ img {
   max-width: 100%;
 }
 
+body > img {
+  width: 20em;
+}
+
 nav {
   display: flex;
   margin-bottom: 1em;
@@ -95,6 +99,10 @@ h6 {
 
 h1 {
   font-size: 400%;
+}
+
+body > h2 {
+  font-size: 250%;
 }
 
 section h2 {
