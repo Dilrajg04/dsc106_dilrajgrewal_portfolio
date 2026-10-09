@@ -88,3 +88,21 @@ h6 {
 h1 {
   font-size: 400%;
 }
+
+section h2 {
+  color: var(--color-accent);
+  border-bottom: 1px solid oklch(80% 3% 200);
+}
+
+article header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0 1em;
+}
+
+article header h3,
+article header p {
+  margin: 0;
+}
