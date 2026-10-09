@@ -3,6 +3,10 @@ html {
   accent-color: var(--color-accent);
 }
 
+html.resume {
+  --color-accent: oklch(40% 50% 260);
+}
+
 body {
   /* Set line height to 1.5 times the font size
 	   and use the OS’s UI font as the website font
