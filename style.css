@@ -1,10 +1,6 @@
 html {
-  --color-accent: oklch(65% 50% 145);
-  accent-color: var(--color-accent);
-}
-
-html.resume {
   --color-accent: oklch(40% 50% 260);
+  accent-color: var(--color-accent);
 }
 
 body {
