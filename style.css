@@ -12,6 +12,10 @@ body {
   margin-inline: max(1em, (100% - 100ch) / 2);
 }
 
+img {
+  max-width: 100%;
+}
+
 nav {
   display: flex;
   margin-bottom: 1em;
