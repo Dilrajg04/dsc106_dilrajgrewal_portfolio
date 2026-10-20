@@ -1,62 +1,74 @@
 [
   {
-    "title": "Pariatur mollit ex ipsum",
+    "title": "CLARIFY: Song Concept Analyzer",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Aute est consequat sunt ex sit laborum proident dolore proident amet incididunt proident ea quis laboris nisi sint esse aliqua nulla labore sint aliquip magna pariatur ex esse sed tempor."
+    "description": "Built a model trained on 500+ songs to predict scores across 15 emotional and thematic dimensions, using Spotify audio features, BERT embeddings, and lyric NLP features."
   },
   {
-    "title": "Magna quis ea veniam",
+    "title": "U.S. Power Outage Analysis and Prediction",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Amet aliqua veniam minim sunt officia tempor sed laboris consectetur dolor consectetur sint ad adipisicing excepteur tempor non sint quis nisi nulla aute enim reprehenderit dolore ea nisi laboris et."
+    "description": "Analyzed 1,534 major U.S. power outage events to find patterns in outage duration, causes, and customer impact, and built regression models that reduced test RMSE by 55%."
   },
   {
-    "title": "Do mollit do ea",
+    "title": "LARPER",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Ut do et incididunt ad irure mollit aute ut sed ad magna est sed in culpa id laborum sunt cupidatat velit laborum veniam aute nisi duis nostrud ut esse ullamco."
+    "description": "Personal project, live at larper.co."
   },
   {
-    "title": "Et velit consequat quis",
+    "title": "Social Media Performance Dashboards",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Nostrud occaecat cillum nostrud officia cillum pariatur sed eiusmod in dolor excepteur veniam duis consequat amet pariatur adipisicing cupidatat duis pariatur pariatur ex ea consequat excepteur labore aute anim sunt."
+    "description": "Built reports and dashboards to track Instagram, LinkedIn, and Facebook engagement, reach, and follower growth for the UC San Diego School of Arts & Humanities."
   },
   {
-    "title": "Lorem ut deserunt culpa",
+    "title": "DSC 106 Lab 1: Portfolio Website",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Adipisicing sint ullamco elit quis labore proident aliqua ut non sed velit ipsum amet duis sint deserunt enim cillum officia mollit magna anim adipisicing minim sunt aliquip lorem laboris commodo."
+    "description": "Built my personal portfolio website with HTML, including a home page, projects page, resume, and contact form."
   },
   {
-    "title": "Duis incididunt adipisicing enim",
+    "title": "DSC 106 Lab 2: Styling with CSS",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Magna culpa dolor aliqua lorem ea ut aliqua cillum eiusmod dolor reprehenderit ad lorem consequat eiusmod cillum cillum proident consequat minim pariatur deserunt qui mollit ad elit occaecat proident dolor."
+    "description": "Styled my portfolio with CSS, including a flexbox navigation bar, a grid contact form, and a responsive project grid using subgrid."
   },
   {
-    "title": "Sunt magna duis laborum",
+    "title": "DSC 106 Lab 3: Introduction to JS",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Occaecat id dolor elit incididunt sunt irure id aute quis voluptate consequat ullamco cupidatat sit veniam ad laborum incididunt non cillum aliquip et reprehenderit occaecat ad duis veniam nostrud mollit."
+    "description": "Added JavaScript to build the navigation automatically, a light and dark theme switcher saved with localStorage, and a better contact form."
   },
   {
-    "title": "Voluptate lorem deserunt ullamco",
+    "title": "DSC 106 Lab 4: JavaScript II",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Minim exercitation sit anim officia commodo aliqua do mollit consequat ex id ullamco dolore culpa fugiat elit non officia laborum magna occaecat cupidatat cillum laborum id culpa incididunt minim excepteur."
+    "description": "Loaded my projects from a JSON file, showed my latest projects on the home page, and displayed live GitHub profile stats from the GitHub API."
   },
   {
-    "title": "Laborum dolore consequat dolor",
+    "title": "3D Art Portfolio",
+    "year": "2021",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Enim eiusmod quis do consectetur duis velit aliquip nisi nisi irure incididunt deserunt do nisi elit ipsum velit reprehenderit pariatur consectetur in reprehenderit laborum duis reprehenderit nisi aliquip cillum consectetur."
+    "description": "Professional 3D artwork I created while I was in high school."
   },
   {
-    "title": "Consectetur in veniam exercitation",
+    "title": "Placeholder Project",
+    "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Ut proident ut mollit elit mollit labore ipsum qui esse dolore voluptate in cupidatat ullamco lorem sit minim magna excepteur ea anim dolor sit excepteur amet officia consectetur exercitation magna."
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
   },
   {
-    "title": "Anim duis veniam aliquip",
+    "title": "Placeholder Project",
+    "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Eiusmod aliquip in cupidatat voluptate aliqua cupidatat anim labore non commodo proident incididunt commodo est esse anim irure est lorem sed velit tempor irure sunt veniam ex duis qui culpa."
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
   },
   {
-    "title": "Esse sit dolor labore",
+    "title": "Placeholder Project",
+    "year": "2023",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Elit in excepteur minim magna enim exercitation id voluptate ipsum sit ipsum adipisicing qui ea reprehenderit ipsum minim veniam officia nostrud in adipisicing voluptate consectetur occaecat reprehenderit fugiat excepteur ea."
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
   }
 ]
