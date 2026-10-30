@@ -136,6 +136,13 @@ form button {
   background-color: var(--color);
 }
 
+.searchBar {
+  width: 100%;
+  box-sizing: border-box;
+  margin-block: 1em;
+  padding: 0.5em;
+}
+
 #profile-stats dl {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
