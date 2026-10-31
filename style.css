@@ -108,10 +108,19 @@ form button {
 
 #projects-pie-plot path {
   transition: 300ms;
+  cursor: pointer;
 }
 
 #projects-pie-plot:has(path:hover) path:not(:hover) {
   opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 300) !important;
+}
+
+path.selected {
+  fill: var(--color);
 }
 
 .container {
