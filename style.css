@@ -106,6 +106,14 @@ form button {
   overflow: visible;
 }
 
+#projects-pie-plot path {
+  transition: 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
