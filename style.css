@@ -192,6 +192,15 @@ path.selected {
   font-size: 200%;
 }
 
+.gridlines .tick line {
+  stroke: gray;
+  stroke-opacity: 0.2;
+}
+
+.gridlines .domain {
+  display: none;
+}
+
 h1,
 h2,
 h3,
