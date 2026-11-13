@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "images/bikewatching.jpg",
+    "description": "An interactive map of Bluebikes traffic in Boston and Cambridge built with Mapbox and D3, with station size showing traffic, color showing arrivals vs. departures, and a slider to filter by time of day.",
+    "url": "https://dilrajg04.github.io/bikewatching/"
+  },
+  {
     "title": "CLARIFY: Song Concept Analyzer",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
@@ -15,7 +22,8 @@
     "title": "LARPER",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Personal project, live at larper.co."
+    "description": "Personal project, live at larper.co.",
+    "url": "https://larper.co"
   },
   {
     "title": "Social Media Performance Dashboards",
