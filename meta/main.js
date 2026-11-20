@@ -78,7 +78,7 @@ function renderCommitInfo(data, commits) {
 function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
   const date = document.getElementById('commit-date');
-  const time = document.getElementById('commit-time');
+  const time = document.getElementById('commit-time-of-day');
   const author = document.getElementById('commit-author');
   const lines = document.getElementById('commit-lines');
 
