@@ -311,6 +311,33 @@ let commits = processCommits(data);
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
 
+// Show each file and how many lines it has for the given commits
+function updateFileDisplay(filteredCommits) {
+  let lines = filteredCommits.flatMap((d) => d.lines);
+  let files = d3
+    .groups(lines, (d) => d.file)
+    .map(([name, lines]) => {
+      return { name, lines };
+    });
+
+  let filesContainer = d3
+    .select('#files')
+    .selectAll('div')
+    .data(files, (d) => d.name)
+    .join(
+      // This code only runs when the div is first added
+      (enter) =>
+        enter.append('div').call((div) => {
+          div.append('dt').append('code');
+          div.append('dd');
+        }),
+    );
+
+  // This code updates the file info
+  filesContainer.select('dt > code').text((d) => d.name);
+  filesContainer.select('dd').text((d) => `${d.lines.length} lines`);
+}
+
 // Slider position from 0 to 100, as a percent of the time between the first and last commit
 let commitProgress = 100;
 
@@ -341,6 +368,7 @@ function onTimeSliderChange() {
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
   updateScatterPlot(data, filteredCommits);
   renderCommitInfo(filteredCommits.flatMap((d) => d.lines), filteredCommits);
+  updateFileDisplay(filteredCommits);
 }
 
 timeSlider.addEventListener('input', onTimeSliderChange);
