@@ -46,7 +46,8 @@ function processCommits(data) {
       });
 
       return ret;
-    });
+    })
+    .sort((a, b) => a.datetime - b.datetime);
 }
 
 function renderCommitInfo(data, commits) {
@@ -387,3 +388,27 @@ function onTimeSliderChange() {
 
 timeSlider.addEventListener('input', onTimeSliderChange);
 onTimeSliderChange();
+
+// Write a short story paragraph for each commit, in date order
+d3.select('#scatter-story')
+  .selectAll('.step')
+  .data(commits)
+  .join('div')
+  .attr('class', 'step')
+  .html((d, i) => {
+    let fileCount = d3.rollups(
+      d.lines,
+      (D) => D.length,
+      (d) => d.file,
+    ).length;
+
+    return `
+      On ${d.datetime.toLocaleString('en', {
+        dateStyle: 'full',
+        timeStyle: 'short',
+      })},
+      I made <a href="${d.url}" target="_blank">${i > 0 ? 'another commit' : 'my first commit'}</a>.
+      I edited ${d.totalLines} ${d.totalLines === 1 ? 'line' : 'lines'}
+      across ${fileCount} ${fileCount === 1 ? 'file' : 'files'}.
+    `;
+  });

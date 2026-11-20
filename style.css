@@ -242,6 +242,11 @@ path.selected {
   position: relative;
 }
 
+/* Space out the story so each commit gets its own part of the scroll */
+.step {
+  padding-bottom: 20vh;
+}
+
 /* Keep the chart on screen while the story scrolls past */
 #scatter-plot {
   position: sticky;
