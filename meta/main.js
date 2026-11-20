@@ -1,4 +1,5 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
+import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
 
 let xScale;
 let yScale;
@@ -375,6 +376,11 @@ const commitTime = document.getElementById('commit-time');
 function onTimeSliderChange() {
   commitProgress = Number(timeSlider.value);
   commitMaxTime = timeScale.invert(commitProgress);
+  updateCommitView();
+}
+
+// Show the commits up to commitMaxTime in the time label, chart, stats, and files
+function updateCommitView() {
   commitTime.textContent = commitMaxTime.toLocaleString('en', {
     dateStyle: 'long',
     timeStyle: 'short',
@@ -412,3 +418,19 @@ d3.select('#scatter-story')
       across ${fileCount} ${fileCount === 1 ? 'file' : 'files'}.
     `;
   });
+
+// When a commit's story step reaches the middle of the screen, show the commits up to it
+function onStepEnter(response) {
+  commitMaxTime = response.element.__data__.datetime;
+  commitProgress = timeScale(commitMaxTime);
+  timeSlider.value = commitProgress;
+  updateCommitView();
+}
+
+const scroller = scrollama();
+scroller
+  .setup({
+    container: '#scrolly-1',
+    step: '#scrolly-1 .step',
+  })
+  .onStepEnter(onStepEnter);
