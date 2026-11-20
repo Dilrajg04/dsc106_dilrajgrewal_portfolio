@@ -47,6 +47,9 @@ function processCommits(data) {
 }
 
 function renderCommitInfo(data, commits) {
+  // Clear the old stats so they can be redrawn when the slider moves
+  d3.select('#stats').html('');
+
   const dl = d3.select('#stats').append('dl').attr('class', 'stats');
 
   dl.append('dt').html('Total <abbr title="Lines of code">LOC</abbr>');
@@ -60,7 +63,7 @@ function renderCommitInfo(data, commits) {
 
   const fileLengths = d3.rollups(
     data,
-    (v) => d3.max(v, (d) => d.line),
+    (v) => v.length,
     (d) => d.file,
   );
   const averageFileLength = d3.mean(fileLengths, (d) => d[1]);
@@ -337,6 +340,7 @@ function onTimeSliderChange() {
 
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
   updateScatterPlot(data, filteredCommits);
+  renderCommitInfo(filteredCommits.flatMap((d) => d.lines), filteredCommits);
 }
 
 timeSlider.addEventListener('input', onTimeSliderChange);
