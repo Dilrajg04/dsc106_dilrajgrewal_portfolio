@@ -328,14 +328,23 @@ function updateFileDisplay(filteredCommits) {
       // This code only runs when the div is first added
       (enter) =>
         enter.append('div').call((div) => {
-          div.append('dt').append('code');
+          div.append('dt');
           div.append('dd');
         }),
     );
 
-  // This code updates the file info
-  filesContainer.select('dt > code').text((d) => d.name);
-  filesContainer.select('dd').text((d) => `${d.lines.length} lines`);
+  // This code updates the file name and line count
+  filesContainer
+    .select('dt')
+    .html((d) => `<code>${d.name}</code><small>${d.lines.length} lines</small>`);
+
+  // Add one div for each line of code
+  filesContainer
+    .select('dd')
+    .selectAll('div')
+    .data((d) => d.lines)
+    .join('div')
+    .attr('class', 'loc');
 }
 
 // Slider position from 0 to 100, as a percent of the time between the first and last commit

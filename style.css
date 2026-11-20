@@ -203,8 +203,29 @@ path.selected {
   grid-column: 1;
 }
 
+#files dt small {
+  display: block;
+  font-size: 75%;
+  opacity: 0.6;
+}
+
 #files dd {
   grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: steelblue;
+  border-radius: 50%;
 }
 
 .stats {
