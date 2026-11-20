@@ -228,6 +228,29 @@ path.selected {
   border-radius: 50%;
 }
 
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+#scrolly-1 > * {
+  flex: 1;
+}
+
+#scatter-story {
+  position: relative;
+}
+
+/* Keep the chart on screen while the story scrolls past */
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+}
+
 .stats {
   display: grid;
   grid-auto-columns: 1fr;
