@@ -255,6 +255,13 @@ circle {
   transform-box: fill-box;
 }
 
+/* New dots start at size 0 so they grow in */
+@starting-style {
+  circle {
+    r: 0;
+  }
+}
+
 circle:hover {
   transform: scale(1.5);
 }
