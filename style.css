@@ -224,7 +224,7 @@ path.selected {
   display: flex;
   width: 0.5em;
   aspect-ratio: 1;
-  background: steelblue;
+  background: var(--color);
   border-radius: 50%;
 }
 
